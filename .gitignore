@@ -1,0 +1,20 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Client/bin/Debug/netstandard2.1/wwwroot/_framework/wasm
+/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin
+/Client/bin/Debug/netstandard2.1/wwwroot/_framework
+/Client/bin/Debug/netstandard2.1/wwwroot/service-worker-assets.js.gz
+*.dll
+*.pdb
+/Client/bin/Release/netstandard2.1/wwwroot/_framework/_bin
+/Client/bin/Release/netstandard2.1/wwwroot/_framework/wasm
+/Client/bin/Release/netstandard2.1/wwwroot/_framework
+*.gz
+/Client/bin
+/Client/obj
+/Server/bin
+/Server/obj
+/Shared/bin
+/Shared/obj

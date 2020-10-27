@@ -1,0 +1,37 @@
+﻿@page "/projects"
+@using RiverviewTimeTracker.Shared.Models
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@attribute [Authorize]
+
+
+<h3>Current Projects</h3>
+
+@if (projects == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var project in projects)
+            {
+                <tr>
+                    <td>@project.Id.ToString()</td>
+                    <td>@project.Name</td>
+                    <td>@project.Description</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
